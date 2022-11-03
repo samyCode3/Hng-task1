@@ -2,8 +2,9 @@ const express = require("express")
 
 const router = express()
 
-router.get("/hng-task", (req, res) => {
-    res.send("hello")
+router.post("/hng-task", (req, res) => {
+    const {x, y, operation_type} = req.body
+    res.send(req.body)
 })
 
 
