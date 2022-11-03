@@ -11,7 +11,7 @@ const {x, y, operation_type} = req.body;
   let result;
   switch(operation_type){
       case "addition":
-          result = x + y;
+          result = (x + y);
           break;
       case "subtraction":
           result = x - y;
