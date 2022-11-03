@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
     res.render("index")
   })
   
-app.get("/", (req, res) => {
+app.get("/hng-task1", (req, res) => {
     return res.json({ 
         slackUsername : "samson onifade",
         age: 21,
