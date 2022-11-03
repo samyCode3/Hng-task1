@@ -16,3 +16,4 @@ app.get("/hng-task1", (req, res) => {
         bio: "My name is samson onifade, a backend developer"
       })
 })
+app.listen(Port)
