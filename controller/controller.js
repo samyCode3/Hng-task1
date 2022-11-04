@@ -13,7 +13,7 @@ const {x, y, operation_type} = req.body;
       case "add":
           result = (x + y);
           break;
-      case "subtract":
+      case "substract":
           result = x - y;
           break;
       case "multiply":
