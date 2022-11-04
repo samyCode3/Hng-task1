@@ -4,19 +4,19 @@ const router = express()
 
 router.post("/hng-task", (req, res) => {
 const {x, y, operation_type} = req.body;
-  const operation_types = ["addition", "subtraction", "multiplication"];
+  const operation_types = ["add", "subtract", "multiply"];
   if(!operation_types.includes(operation_type)){
       return res.status(400).json({ok : false, message : "Invalid operation type provided."});
   }
   let result;
   switch(operation_type){
-      case "addition":
+      case "add":
           result = (x + y);
           break;
-      case "subtraction":
+      case "subtract":
           result = x - y;
           break;
-      case "multiplication":
+      case "multiply":
           result = x * y;
           break;
       default:
