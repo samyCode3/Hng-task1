@@ -27,7 +27,7 @@ const {x, y, operation_type} = req.body;
   {
       return res.status(400).json({ok : false, message : "Cant proceed with request input is empty."});
   }
-  return res.status(200).json({ok : true, SlackName : "Samson onifade", operation_type, result})
+  return res.status(200).json({ok : true, SlackName : "Samson onifade", operation_type : operation_type, result : result})
 })
 
 
